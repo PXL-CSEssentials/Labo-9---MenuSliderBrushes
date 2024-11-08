@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labo-9---MenuSliderBrushes", "Labo-9---MenuSliderBrushes\Labo-9---MenuSliderBrushes.csproj", "{DE523B55-749D-4870-B3BF-4A0CC4D3F2F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE523B55-749D-4870-B3BF-4A0CC4D3F2F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE523B55-749D-4870-B3BF-4A0CC4D3F2F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE523B55-749D-4870-B3BF-4A0CC4D3F2F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE523B55-749D-4870-B3BF-4A0CC4D3F2F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BEAA6190-29E6-4842-AF0A-15870AB3A5E7}
+	EndGlobalSection
+EndGlobal
