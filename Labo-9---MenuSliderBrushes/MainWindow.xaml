@@ -5,19 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Labo_9___MenuSliderBrushes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-        <Label Grid.Column="0" Grid.Row="0" Content="Eerste getal:"/>
-        <TextBox Grid.Column="1" Grid.Row="0" Name="numberOneTextBox" HorizontalAlignment="Left" Width="100"/>
-        <Label Grid.Column="0" Grid.Row="1" Content="Tweede getal:"/>
-        <TextBox Grid.Column="1" Grid.Row="1" Name="numberTwoTextBox" HorizontalAlignment="Left" Width="100"/>
-    </Grid>
+        Title="MainWindow" Height="450" Width="800" Closing="Window_Closing">
+    <DockPanel>
+        <Menu x:Name="Hoofdmenu" DockPanel.Dock="Top">
+            <MenuItem Header="Bestand" >
+                <MenuItem x:Name="closeMenuItem" Header="Afsluiten" Click="closeMenuItem_Click" />
+            </MenuItem>
+            <MenuItem Header="Getallen" >
+                <MenuItem x:Name="numberOneMenuItem" Header="Eerste getal" Click="numberOneMenuItem_Click"/>
+                <MenuItem x:Name="numberTwoMenuItem" Header="Tweede getal" Click="numberTwoMenuItem_Click"/>
+            </MenuItem>
+        </Menu>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Column="0" Grid.Row="0" Content="Eerste getal:"/>
+            <TextBox Grid.Column="1" Grid.Row="0" Name="numberOneTextBox" TextChanged="numberOneTextBox_TextChanged"/>
+            <Slider Grid.Column="2" Grid.Row="0" x:Name="numberOneSlider" Minimum="1" Maximum="5" TickFrequency="1" IsSnapToTickEnabled="True" ValueChanged="numberOneSlider_ValueChanged"/>
+            <Label Grid.Column="0" Grid.Row="1" Content="Tweede getal:"/>
+            <TextBox Grid.Column="1" Grid.Row="1" Name="numberTwoTextBox" TextChanged="numberTwoTextBox_TextChanged"/>
+            <Slider Grid.Column="2" Grid.Row="1" x:Name="numberTwoSlider" Minimum="1" Maximum="5" TickFrequency="1" IsSnapToTickEnabled="True" ValueChanged="numberTwoSlider_ValueChanged"/>
+        </Grid>
+    </DockPanel>
 </Window>
